@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="LEVEL-1b_FINAL.css">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&family=Montserrat:wght@100;200;300;400&family=Mulish:wght@400;500;700&family=Noto+Serif:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="top w-100 d-flex">
+        <p class="navbar-brand fw-bold ps-5 text-dark fs-5 py-2">Minimal.</p>
+        <a href="#"><img src="./images/shopping-bag.png "class="bag pt-3"></a>
+    </div>
+    <section class="row mx-auto" style="height:485px;">
+        <div class=" col-lg-6 col-md-12 col-sm-12" style="height:485px ;">
+            <a href="./index.html" class="back border-0"><img src="./images/arrow-left.png"></a>
+            <div class="content w-100 mx-auto mt-4"><img src="./images/no.5.png" class=" img rounded-2 img-responsive">
+            </div>
+            <div class="small d-flex">
+                <img src="./images/no.5.png" class="small_img rounded-2 img-responsive ms-3">
+                <img src="./images/no.5.png" class="small_img rounded-2 img-responsive">
+                <img src="./images/no.5.png" class="small_img rounded-2 img-responsive">
+            </div>
+        </div>
+        <div class="start col-lg-6 col-md-12 col-sm-12 pt-4" style="height:485px ;">
+            <p class="head">Designed by the Special Nyansh</p>
+            <h1 class="name fw-bold mt-1">Grey Couch</h1>
+            <p class="details mt-2">A grey coated coach with comfortable<br>
+                feel for you to do all things like<br>
+                Netflix and chill with popcorn</p>
+            <div class="picker d-flex">
+                <button class="color border-0" onclick="dark()"><img src="./images/dark_dot.png" class="dot"></button>
+                <button class="color1 border-0" onclick="white()"><img src="./images/white_dot.png"
+                        class="dot"></button>
+            </div>
+            <div class="mes d-flex mt-3">
+                <div class="twin1 border border-1 border-dark">HEIGHT <br><span class="size"
+                        id="hsize"><b>52</b>cm</span></div>
+                <div class="twin1 border border-1 border-dark">WIDTH <br><span class="size"
+                        id="wsize"><b>700</b>cm</span></div>
+                <button class="convert ms-2 border-0 fw-semibold" id="con" onclick="convert()">Size in Inches</button>
+            </div>
+            <h3 class="price fw-bold mt-3" id="price">$979.00</h3>
+            <div class="arit d-flex">
+                <button class="minus border-0" onclick="minus()"><img src="./images/minus.png"></button>
+                <p id="inp">1</p>
+                <button class="minus border-0" onclick="add()"><img src="./images/plus.png"></button>
+            </div>
+            <div class="buttons d-flex">
+                <button class="one fw-bold rounded-3" onclick="showConfirmation()">ADD TO CART</button>
+                <button class="two fw-bold rounded-3 bg-dark text-white shadow" onclick="purchaseConfirmation()">BUY NOW</button>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="container">
+        <p class="success px-auto fw-bold text-center mt-4">SUCCESSFULLY <br> ADDED <br>TO CART</p>
+        <button class="buut" onclick="close_confirmation()"><img src="./images/close_button-removebg-preview.png" alt="" class="close_but"></button>
+    </div>
+    <div class="purchase" id="purchase">
+        <p class="px-auto fw-bold text-center mt-4">Enter pin to confirm purchase</p>
+        <input type="password" class="pass"> <br>
+        <button class="buyt rounded-2" onclick="buy()">Buy</button>
+        <button class="buut" onclick="close_confirmation()"><img src="./images/close_button-removebg-preview.png" alt="" class="closet_but"></button>
+    </div>
+
+    <script>
+        function dark() {
+            document.getElementById("body").style.backgroundColor = "aqua"
+        }
+        function white() {
+            document.getElementById("body").style.backgroundColor = "white"
+        }
+        function convert() {
+            if (con.innerText == 'Size in Inches') {
+                hsize.innerText = '20.4 in'
+                wsize.innerText = '275.6 in'
+                con.innerText = 'Size in cm'
+            } else {
+                hsize.innerText = '54 cm'
+                wsize.innerText = '700 cm'
+                con.innerText = 'Size in Inches'
+            }
+        }
+        function add() {
+            inp.innerText = Number(inp.innerText) + 1
+        }
+        function minus() {
+            if (inp.innerText > 1) {
+                inp.innerText = parseInt(inp.innerText - 1)
+            } else {
+                inp.innerText = parseInt(inp.innerText - 0)
+            }
+        }
+        function showConfirmation() {
+            container.style.display = "block"
+            purchase.style.display = "none"
+        }
+        function purchaseConfirmation() {
+            purchase.style.display = "block"
+            container.style.display = "none"
+        }
+        function close_confirmation() {
+            container.style.display = "none"
+            purchase.style.display = "none"
+        }
+        function buy(){
+            purchase.style.display = "none"
+        }
+    </script>
+
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

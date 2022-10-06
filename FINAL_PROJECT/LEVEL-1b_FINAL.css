@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.start {
+    padding-top: 38px;
+}
+
+.bag {
+    width: 16px;
+    margin-top: px;
+    margin-left: 850px;
+}
+
+.top {
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.img {
+    height: 280px;
+    width: 76%;
+    margin-left: 57px;
+    margin-top: 6px;
+    box-shadow: 1px 3px 7px 0 rgb(173, 171, 171);
+}
+
+.content {
+    height: 300px;
+}
+
+.small {
+    gap: 17px;
+    padding-top: 5px;
+    padding-left: 40px;
+    margin-top: 3px;
+}
+
+.small_img {
+    height: 105px;
+    width: 25.5%;
+    box-shadow: 1px 3px 7px 0 rgb(173, 171, 171);
+}
+
+.head {
+    color: #979797;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+}
+
+.details {
+    line-height: 19px;
+    color: #979797;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.color {
+    background-color: transparent;
+}
+
+.color1 {
+    background-color: transparent;
+    padding-top: 6px;
+}
+
+.dot:hover {
+    width: 73%;
+    border-radius: 50%;
+}
+
+.dot {
+    width: 70%;
+}
+
+.twin1 {
+    width: 90px;
+    height: 42px;
+    line-height: 15px;
+    font-size: 13px;
+    padding: 3px;
+    font-weight: light;
+    text-align: center;
+}
+
+.size {
+    font-size: 15px;
+}
+
+.convert {
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 13px;
+    color: #979797;
+}
+
+.price {
+    font-family: 'Inter', sans-serif;
+}
+
+.minus {
+    background-color: transparent;
+    height: fit-content;
+}
+
+.minus img {
+    width: 65%;
+    margin-top: -3px;
+}
+
+.arit {
+    gap: 6px;
+}
+
+.buttons {
+    gap: 10px;
+}
+
+.one {
+    background-color: transparent;
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 120px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+}
+
+.one:hover {
+    background-color: #979797;
+    border: none;
+    padding: 7px 12px;
+    box-shadow: 1px 3px 7px 0 rgb(173, 171, 171);
+}
+
+.two {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 120px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+}
+
+.two:hover {
+    border: none;
+    padding: 7px 12px;
+}
+
+.back {
+    position: absolute;
+    border-radius: 3px;
+    background-color: transparent;
+    top: 250px;
+}
+
+.back img {
+    width: 70%;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.642);
+    height: 130px;
+    z-index: 1;
+    box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
+    margin-top: -300px;
+    left: 400px;
+}
+
+.purchase {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.642);
+    height: 150px;
+    z-index: 1;
+    box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
+    margin-top: -300px;
+    left: 400px;
+    background-color: rgba(255, 255, 255, 0.804);
+}
+
+#purchase {
+    width: 25%;
+}
+.buyt {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 70px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.pass {
+    margin-left: 40px;
+}
+
+#container {
+    width: 25%;
+}
+.close_but{
+    width: 12px;
+    position: absolute;
+    margin-top: -120px;
+    left: 240px;
+}
+.closet_but{
+    width: 12px;
+    position: absolute;
+    margin-top: -120px;
+    left: 240px;
+}
+.buut{
+    background-color: transparent;
+    padding: 0px 5px;
+    border: 0;
+}
+
+@media (max-width:600px) {
+    .start {
+        background-color: rgb(248, 247, 245);
+        border-radius: 5% 5% 0 0;
+        width: 100%;
+    }
+
+    .bag {
+        margin-left: 180px;
+    }
+
+    .top {
+        justify-content: space-evenly;
+    }
+
+    .img {
+        width: 83%;
+        height: 290px;
+        margin-left: 33px;
+    }
+
+    .small {
+        gap: 10px;
+        height: 75px;
+        width: 90%;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .small_img {
+        height: 75px;
+        width: 30%px;
+    }
+
+    .head {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .name {
+        font-size: 35px;
+        padding-left: 14px;
+    }
+
+    .details {
+        line-height: 20px;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .picker {
+        position: absolute;
+        margin-top: -320px;
+        margin-left: 32px;
+    }
+
+    .dot {
+        width: 80%;
+    }
+
+    .buttons {
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .mes {
+        padding-left: 15px;
+    }
+
+    .price {
+        padding-left: 15px;
+    }
+
+    .arit {
+        padding-left: 15px;
+    }
+
+    .back {
+        top: 220px;
+    }
+
+    .container {
+        height: 95px;
+        z-index: 1;
+        box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
+        margin-top: 230px;
+        left: 125px;
+        line-height: 15px;
+    }
+
+    #container {
+        width: 40%;
+    }
+
+    .purchase {
+        background-color: rgba(255, 255, 255, 0.804);
+        height: 150px;
+        z-index: 1;
+        box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
+        margin-top: 180px;
+        left: 125px;
+        line-height: 15px;
+    }
+
+    #purchase {
+        width: 50%;
+    }
+
+    .pass {
+        margin-left: 25px;
+    }
+
+    .buyt {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: 70px;
+        border: 1px solid black;
+        margin-top: 15px;
+        margin-left: 85px;
+    }
+    .close_but{
+        width: 12px;
+        position: absolute;
+        margin-top: -90px;
+        left: 170px;
+    }
+    .closet_but{
+        width: 12px;
+        position: absolute;
+        margin-top: -105px;
+        left: 220px;
+    }
+}

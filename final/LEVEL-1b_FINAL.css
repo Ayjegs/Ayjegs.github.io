@@ -313,7 +313,7 @@
         z-index: 1;
         box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
         margin-top: 230px;
-        left: 125px;
+        left: 115px;
         line-height: 15px;
     }
 
@@ -327,7 +327,7 @@
         z-index: 1;
         box-shadow: 1px 3px 7px 0 rgb(170, 157, 157);
         margin-top: 180px;
-        left: 125px;
+        left: 115px;
         line-height: 15px;
     }
 
@@ -336,7 +336,7 @@
     }
 
     .pass {
-        margin-left: 25px;
+        margin: 0;
     }
 
     .buyt {
@@ -350,13 +350,13 @@
     .close_but{
         width: 12px;
         position: absolute;
-        margin-top: -90px;
-        left: 170px;
+        margin-top: -93px;
+        left: 132px;
     }
     .closet_but{
         width: 12px;
         position: absolute;
-        margin-top: -105px;
-        left: 220px;
+        margin-top: -123px;
+        left: 168px;
     }
 }

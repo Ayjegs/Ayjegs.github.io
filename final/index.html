@@ -181,7 +181,8 @@
         <div class="new">New</div>
         <!-- <button class="heart"><img src="./images/heart1.png" alt=""></button> -->
         <button class="like border-0" onclick="likeProduct()" id="unlike"><img src="./images/like.png"></button>
-        <button class="like1 border-0" onclick="unlikeProduct()" id="like"><img src="./images/heart1-removebg-preview.png"></button>
+        <button class="like1 border-0" onclick="unlikeProduct()" id="like"><img
+            src="./images/heart1-removebg-preview.png"></button>
         <div class="price">
           <p class="fw-bold">Chair & Table</p>
           <p class="pr">$69.00</p>
@@ -291,6 +292,8 @@
         nav.classList.remove('bg-white', 'shadow-sm')
       }
     })
+
+    document.getElementById("side_nav").style.display = "none"
 
     function openBtn() {
       document.getElementById("side_nav").style.display = "block"
